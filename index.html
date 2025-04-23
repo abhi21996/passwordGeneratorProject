@@ -7,34 +7,34 @@
     <script src="./index.js"> </script>
     <title>Document</title>
 </head>
-<body class="flex justify-center items-center">
+<body class="flex justify-center items-center bg-[#1b1b3a]">
     
-    <div class="container flex flex-col justify-center items-center border border-black gap-8 mt-[200px] p-[60px] size-fit">
-        <h1>Password Generator</h1>
-        <input id="password-display" class="border border-black w-[220px]" readonly placeholder="click on Generate Button" />
+    <div class="container flex flex-col justify-center items-center border border-[#525262] gap-8 mt-[200px] p-[60px] size-fit">
+        <h1 class="text-[#eef1ef] text-3xl">Password Generator</h1>
+        <input id="password-display" class="border border-black w-[280px] bg-white" readonly placeholder="click on Generate Button" />
         <div class="btns flex flex-row justify-center items-center gap-4">
-            <button onclick="generatePassword()" class="border border-black">Generate</button>
-            <button onclick="copyPassword()" class="border border-black">copy to Clipboard</button>
+            <button onclick="generatePassword()" class="border border-black px-2 py-1 bg-[#9881ff] text-[#ebe9ea]">Generate</button>
+            <button onclick="copyPassword()" class="border border-black px-2 py-1 bg-[#9881ff] text-[#ebe9ea]">copy to Clipboard</button>
         </div>
         <div class="options">
-            <div class="option flex flex-row justify-between items-center">
-                <h4>Password Length</h4>
-                <input class="border border-black" type="text"  id="length" value="12" style="width: 50px;">
+            <div class="option flex flex-row items-center gap-32">
+                <h4 class="text-[#ebe9ea]">Password Length</h4>
+                <input class="border border-[#ebe9ea] text-[#ebe9ea]" type="text"  id="length" value="12" style="width: 50px;">
             </div>
-            <div class="option flex flex-row justify-between items-center gap-4">
-                <h4>Include Uppercase Letters</h4>
+            <div class="option flex flex-row justify-between items-center gap-8">
+                <h4 class="text-[#ebe9ea]">Include Uppercase Letters</h4>
                 <input type="checkbox" id="uppercase" checked>
             </div>
             <div class="option flex flex-row justify-between items-center gap-4">
-                <h4>Include Lowercase Letters</h4>
+                <h4 class="text-[#ebe9ea]">Include Lowercase Letters</h4>
                 <input type="checkbox" id="lowercase" checked>
             </div>
             <div class="option flex flex-row justify-between items-center gap-4">
-                <h4>Include Numbers</h4>
+                <h4 class="text-[#ebe9ea]">Include Numbers</h4>
                 <input type="checkbox" id="numbers" checked>
             </div>
             <div class="option flex flex-row justify-between items-center gap-4">
-                <h4>Include Symbols</h4>
+                <h4 class="text-[#ebe9ea]">Include Symbols</h4>
                 <input type="checkbox" id="symbols">
             </div>
         </div>
