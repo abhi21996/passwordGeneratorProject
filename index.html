@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./index.js"> </script>
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center">
+    
+    <div class="container flex flex-col justify-center items-center border border-black gap-8 mt-[200px] p-[60px] size-fit">
+        <h1>Password Generator</h1>
+        <input id="password-display" class="border border-black w-[220px]" readonly placeholder="click on Generate Button" />
+        <div class="btns flex flex-row justify-center items-center gap-4">
+            <button onclick="generatePassword()" class="border border-black">Generate</button>
+            <button onclick="copyPassword()" class="border border-black">copy to Clipboard</button>
+        </div>
+        <div class="options">
+            <div class="option flex flex-row justify-between items-center">
+                <h4>Password Length</h4>
+                <input class="border border-black" type="text"  id="length" value="12" style="width: 50px;">
+            </div>
+            <div class="option flex flex-row justify-between items-center gap-4">
+                <h4>Include Uppercase Letters</h4>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="option flex flex-row justify-between items-center gap-4">
+                <h4>Include Lowercase Letters</h4>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="option flex flex-row justify-between items-center gap-4">
+                <h4>Include Numbers</h4>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="option flex flex-row justify-between items-center gap-4">
+                <h4>Include Symbols</h4>
+                <input type="checkbox" id="symbols">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
